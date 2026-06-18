@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-06-18T09:00:29.135Z",
+  "capturedAt": "2026-06-18T09:30:40.946Z",
   "status": "ok",
-  "next_expected_run_at": "2026-06-18T09:30:29.135Z",
+  "next_expected_run_at": "2026-06-18T10:00:40.946Z",
   "stats": {
     "overall": "minor",
     "confidence_pct": 83,
