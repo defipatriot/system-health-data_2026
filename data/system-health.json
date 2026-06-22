@@ -1,24 +1,16 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-06-22T16:30:45.416Z",
-  "capturedAtUnix": 1782145845416,
-  "overall": "minor",
-  "overall_reason": "1 auxiliary feed(s) down — core data unaffected.",
+  "capturedAt": "2026-06-22T16:32:31.881Z",
+  "capturedAtUnix": 1782145951881,
+  "overall": "healthy",
+  "overall_reason": "All systems reporting fresh data.",
   "confidence_pct": 100,
   "counts": {
-    "ok": 17,
+    "ok": 18,
     "warn": 0,
-    "down": 1
+    "down": 0
   },
-  "attention": [
-    {
-      "key": "fuel",
-      "health": "down",
-      "status": "stale",
-      "reason": "Last update 6d ago — expected every 1 h. The cron may be failing or paused. Check Render logs.",
-      "recent_errors": []
-    }
-  ],
+  "attention": [],
   "systems": [
     {
       "key": "network-and-prices",
@@ -27,9 +19,9 @@
       "present": true,
       "status": "ok",
       "health": "ok",
-      "reason": "Healthy — last updated 50m ago.",
+      "reason": "Healthy — last updated 52m ago.",
       "last_run": "2026-06-22T15:40:27.599Z",
-      "age_min": 50,
+      "age_min": 52,
       "cadence_min": 60,
       "run_status": "ok",
       "stuck": false,
@@ -38,6 +30,7 @@
         "lst_ratios": 6,
         "source_failures": 0
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/network-and-prices-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/network-and-prices"
@@ -51,7 +44,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 16h ago.",
       "last_run": "2026-06-22T00:05:20.966Z",
-      "age_min": 985,
+      "age_min": 987,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -109,6 +102,7 @@
           "unclassified": 0
         }
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/tla-chain-registry",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/chain/tla-registry"
@@ -120,9 +114,9 @@
       "present": true,
       "status": "ok",
       "health": "ok",
-      "reason": "Healthy — last updated 50m ago.",
+      "reason": "Healthy — last updated 52m ago.",
       "last_run": "2026-06-22T15:40:30.479Z",
-      "age_min": 50,
+      "age_min": 52,
       "cadence_min": 60,
       "run_status": "ok",
       "stuck": false,
@@ -132,6 +126,7 @@
         "voted_pools": 32,
         "source_failures": 0
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/tla-snapshot-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/tla-snapshot"
@@ -143,9 +138,9 @@
       "present": true,
       "status": "ok",
       "health": "ok",
-      "reason": "Healthy — last updated 15m ago.",
+      "reason": "Healthy — last updated 17m ago.",
       "last_run": "2026-06-22T16:15:24.173Z",
-      "age_min": 15,
+      "age_min": 17,
       "cadence_min": 60,
       "run_status": "ok",
       "stuck": false,
@@ -179,6 +174,7 @@
         "enterprise_unattributed": 81,
         "daodao_pending_reconciled": false
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/nft-inventory-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/nft-inventory"
@@ -190,9 +186,9 @@
       "present": true,
       "status": "ok",
       "health": "ok",
-      "reason": "Healthy — last updated 15m ago.",
+      "reason": "Healthy — last updated 17m ago.",
       "last_run": "2026-06-22T16:15:28.796Z",
-      "age_min": 15,
+      "age_min": 17,
       "cadence_min": 60,
       "run_status": "ok",
       "stuck": false,
@@ -205,30 +201,32 @@
         "cumulative_boost_sales": 0,
         "errors": 0
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/marketplace-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/marketplace-stats"
     },
     {
       "key": "fuel",
-      "repo": "fuel-data_2026",
+      "repo": "tla-core",
       "tier": "aux",
       "present": true,
-      "status": "stale",
-      "health": "down",
-      "reason": "Last update 6d ago — expected every 1 h. The cron may be failing or paused. Check Render logs.",
-      "last_run": "2026-06-16T23:50:29.471Z",
-      "age_min": 8200,
+      "status": "ok",
+      "health": "ok",
+      "reason": "Healthy — last updated 42m ago.",
+      "last_run": "2026-06-22T15:50:26.830Z",
+      "age_min": 42,
       "cadence_min": 60,
       "run_status": "ok",
       "stuck": false,
       "stats": {
-        "price_usd": 0.003125590941515713,
-        "tvl_usd": 57368.3,
-        "vol_24h_luna": 13.071418
+        "price_usd": 0.002818309445170477,
+        "tvl_usd": 50970.2,
+        "vol_24h_luna": 173.77295
       },
+      "note": "Migrated to tla-core/fuel (2026-06) ✓",
       "recent_errors": [],
-      "data_repo_url": "https://github.com/defipatriot/fuel-data_2026",
+      "data_repo_url": "https://github.com/defipatriot/tla-core",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/fuel"
     },
     {
@@ -240,7 +238,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 17h ago.",
       "last_run": "2026-06-21T23:35:18.512Z",
-      "age_min": 1015,
+      "age_min": 1017,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -254,6 +252,7 @@
         "max_funded_epoch": 193,
         "epochs_funded_ahead": 3
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/bribes-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/bribes-history"
@@ -267,7 +266,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 16h ago.",
       "last_run": "2026-06-22T01:00:44.012Z",
-      "age_min": 930,
+      "age_min": 932,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -278,6 +277,7 @@
         "council_present": true,
         "council_count": 1
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/adao-positions-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/adao-positions"
@@ -291,7 +291,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 15h ago.",
       "last_run": "2026-06-22T02:00:41.902Z",
-      "age_min": 870,
+      "age_min": 872,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -304,6 +304,7 @@
         "lock_complete": true,
         "bribe_source_ok": true
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/tla-participants-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/tla-participants"
@@ -317,7 +318,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 14h ago.",
       "last_run": "2026-06-22T03:01:05.989Z",
-      "age_min": 810,
+      "age_min": 811,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -342,6 +343,7 @@
           }
         ]
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/adao-allies-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/adao-allies"
@@ -355,7 +357,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 13h ago.",
       "last_run": "2026-06-22T04:00:56.577Z",
-      "age_min": 750,
+      "age_min": 752,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -367,6 +369,7 @@
         "system_vp": 27086270.719187,
         "system_stale_vp_gap": 3613934.045404773
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/tla-locks-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/tla-locks"
@@ -380,7 +383,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 12h ago.",
       "last_run": "2026-06-22T05:00:58.978Z",
-      "age_min": 690,
+      "age_min": 692,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -391,6 +394,7 @@
         "any_discovery_incomplete": false,
         "error_count": 0
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/votion-positions-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/votion-positions"
@@ -404,13 +408,14 @@
       "health": "ok",
       "reason": "Healthy — last updated 17h ago.",
       "last_run": "2026-06-21T23:55:21.541Z",
-      "age_min": 995,
+      "age_min": 997,
       "cadence_min": 10080,
       "run_status": "ok",
       "stuck": false,
       "stats": {
         "lockups_captured": 5
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/votion-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/votion"
@@ -424,13 +429,14 @@
       "health": "ok",
       "reason": "Healthy — last updated 17h ago.",
       "last_run": "2026-06-21T23:50:33.026Z",
-      "age_min": 1000,
+      "age_min": 1002,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
       "stats": {
         "latest_daily": "2026-06-21"
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/ampcapa-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/ampcapa"
@@ -444,7 +450,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 17h ago.",
       "last_run": "2026-06-21T23:50:34.311Z",
-      "age_min": 1000,
+      "age_min": 1002,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -452,6 +458,7 @@
         "backing_luna_per_nft": 194.932812,
         "latest_date": "2026-06-21"
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/backing-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/backing"
@@ -465,7 +472,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 17h ago.",
       "last_run": "2026-06-21T23:50:34.812Z",
-      "age_min": 1000,
+      "age_min": 1002,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -475,6 +482,7 @@
         "failed": 0,
         "total": 36
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/astroport-pool-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/astroport"
@@ -488,7 +496,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 15h ago.",
       "last_run": "2026-06-22T02:00:58.922Z",
-      "age_min": 870,
+      "age_min": 872,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -501,6 +509,7 @@
         "num_tokens": 433,
         "token_fetch_errors": 0
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/tla-vp-holders-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/tla-vp-holders"
@@ -514,7 +523,7 @@
       "health": "ok",
       "reason": "Healthy — last updated 16h ago.",
       "last_run": "2026-06-22T00:05:26.432Z",
-      "age_min": 985,
+      "age_min": 987,
       "cadence_min": 1440,
       "run_status": "ok",
       "stuck": false,
@@ -526,6 +535,7 @@
         "tvlSumUsd": null,
         "fileWritten": "2026-epoch-191.csv"
       },
+      "note": null,
       "recent_errors": [],
       "data_repo_url": "https://github.com/defipatriot/ss-pool-data_2026",
       "cron_source_url": "https://github.com/defipatriot/cron-scripts/tree/main/skeletonswap-lp_data"
@@ -537,63 +547,63 @@
       "role": "Terra LCD — chain queries (primary)",
       "up": true,
       "status": 200,
-      "latency_ms": 294,
+      "latency_ms": 296,
       "health": "ok",
-      "reason": "Up (294ms, HTTP 200)."
+      "reason": "Up (296ms, HTTP 200)."
     },
     {
       "key": "terra-rest (fallback)",
       "role": "Terra LCD — chain queries (fallback)",
       "up": true,
       "status": 200,
-      "latency_ms": 465,
+      "latency_ms": 472,
       "health": "ok",
-      "reason": "Up (465ms, HTTP 200)."
+      "reason": "Up (472ms, HTTP 200)."
     },
     {
       "key": "daodao indexer",
       "role": "DAODAO indexer — staker resolution",
       "up": true,
       "status": 400,
-      "latency_ms": 77,
+      "latency_ms": 82,
       "health": "ok",
-      "reason": "Up (77ms, HTTP 400)."
+      "reason": "Up (82ms, HTTP 400)."
     },
     {
       "key": "pfpk",
       "role": "PFPK — wallet name resolution",
       "up": true,
       "status": 404,
-      "latency_ms": 318,
+      "latency_ms": 69,
       "health": "ok",
-      "reason": "Up (318ms, HTTP 404)."
+      "reason": "Up (69ms, HTTP 404)."
     },
     {
       "key": "coingecko",
       "role": "CoinGecko — base asset prices",
       "up": true,
       "status": 403,
-      "latency_ms": 70,
+      "latency_ms": 63,
       "health": "ok",
-      "reason": "Up (70ms, HTTP 403)."
+      "reason": "Up (63ms, HTTP 403)."
     },
     {
       "key": "eris backend",
       "role": "Eris Protocol — LST/pool data",
       "up": true,
       "status": 200,
-      "latency_ms": 605,
+      "latency_ms": 601,
       "health": "ok",
-      "reason": "Up (605ms, HTTP 200)."
+      "reason": "Up (601ms, HTTP 200)."
     },
     {
       "key": "warlock (BBL)",
       "role": "BackBone Labs — marketplace listings",
       "up": true,
       "status": 404,
-      "latency_ms": 197,
+      "latency_ms": 112,
       "health": "ok",
-      "reason": "Up (197ms, HTTP 404)."
+      "reason": "Up (112ms, HTTP 404)."
     }
   ],
   "endpoints_down": 0,
