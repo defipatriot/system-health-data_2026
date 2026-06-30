@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-06-30T08:00:37.849Z",
+  "capturedAt": "2026-06-30T08:30:20.553Z",
   "status": "ok",
-  "next_expected_run_at": "2026-06-30T08:30:37.849Z",
+  "next_expected_run_at": "2026-06-30T09:00:20.553Z",
   "stats": {
     "overall": "healthy",
     "confidence_pct": 100,
